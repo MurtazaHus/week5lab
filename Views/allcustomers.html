@@ -1,0 +1,30 @@
+<html>
+<body>
+    <table>
+        <tr>
+            <th>
+                Full Name
+            </th>
+            <th>
+                Email 
+            </th>
+        </tr>
+       
+        <% for(let i = 0; i < customers.lenght; i++){ %>
+            <tr > 
+                <td>
+                    <%= customers[i].FullName %>
+                </td>
+                <td>
+                    <%= customers[i].Email %> 
+                </td>
+            </tr>
+        <% } %> 
+        
+
+    </table>
+
+</body>
+
+
+</html>
