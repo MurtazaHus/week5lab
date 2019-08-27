@@ -3,24 +3,29 @@
     <table>
         <tr>
             <th>
-                Full Name
+                TASK
             </th>
             <th>
-                Email 
+                TASK DUE 
+            </th>
+            <th>
+                TASK DESC
             </th>
         </tr>
        
         <% for(let i = 0; i < customers.lenght; i++){ %>
             <tr > 
                 <td>
-                    <%= customers[i].FullName %>
+                    <%= db[i].TaskName %>
                 </td>
                 <td>
-                    <%= customers[i].Email %> 
+                    <%= db[i].DueDate %> 
+                </td>
+                <td> 
+                    <% = db[i].TaskDesc %>
                 </td>
             </tr>
         <% } %> 
-        
 
     </table>
 
