@@ -13,7 +13,7 @@
             </th>
         </tr>
        
-        <% for(let i = 0; i < customers.lenght; i++){ %>
+        <% for(let i = 0; i < db.length; i++){ %>
             <tr > 
                 <td>
                     <%= db[i].TaskName %>
@@ -22,13 +22,17 @@
                     <%= db[i].DueDate %> 
                 </td>
                 <td> 
-                    <% = db[i].TaskDesc %>
+                    <%= db[i].TaskDesc %>
                 </td>
             </tr>
         <% } %> 
 
     </table>
-
+    <style>
+            body{
+          background-color: #ffa500 ;
+            }
+        </style>
 </body>
 
 
