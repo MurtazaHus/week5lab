@@ -30,7 +30,9 @@ app.get('/addcustomer', function(req, res){
 
 app.get('/allcustomers', function(req, res){
 
-    res.render(Viewspath +"/allcustomers.html");
+    res.render(Viewspath +"/allcustomers.html", {
+        db: db
+    });
 });
 
 app.post('/addCustomer', function(req, res){ //gets the values from the page
